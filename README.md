@@ -115,7 +115,7 @@ If you haven't configured wandb, the checkpoint files will be saved in  `/tmp/wa
 
 ### Step 5: Racing environment
 
-The racing environment is defined in `envs/drone_race/drone_race.py`. We provide the user with code for extracting the relevant observations. You must design the reward function in `_compute_reward_and_done`. Feel free to change any other parts of the pipeline, this is simply a good starting point. 
+The racing environment is defined in `envs/drone_race/drone_race.py`. We provide the user with code for extracting the relevant observations. You must design the reward function in `_compute_reward_and_done`. The environment configuration in defined in `cfg/task/DroneRace.yaml` and the ppo parameters are in `cfg/algo/DroneRace.yaml`. Feel free to change any other parts of the pipeline, this is simply a good starting point. 
 
 **What you should not change:** Drone dynamics including the drone's physical parameters and constraints. Gate design and gate locations.
 
